@@ -31,11 +31,14 @@ public class AndroidMeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_me);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
+        // Create a new head BodyPartFragment
         BodyPartFragment headFragment = new BodyPartFragment();
-        fragmentTransaction.add(R.id.head_container, headFragment);
-        fragmentTransaction.commit();
+
+        // Add the fragment to its container using a FragmentManager and a Transaction
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        fragmentManager.beginTransaction()
+                .add(R.id.head_container, headFragment)
+                .commit();
     }
 }

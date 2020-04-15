@@ -29,10 +29,10 @@ public class BodyPartFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_body_part, container, false);
 
         // Get a reference to the ImageView in the fragment layout
-        ImageView headImage = (ImageView) rootView.findViewById(R.id.body_part_image_view);
+        ImageView imageView = (ImageView) rootView.findViewById(R.id.body_part_image_view);
 
         // Set the image to the first in our list of head images
-        headImage.setImageResource(AndroidImageAssets.getHeads().get(0));
+        imageView.setImageResource(AndroidImageAssets.getHeads().get(0));
 
         // Return the rootView
         return rootView;

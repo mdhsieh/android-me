@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.android.android_me.R;
-import com.example.android.android_me.data.AndroidImageAssets;
 
 import java.util.ArrayList;
 import java.util.List;

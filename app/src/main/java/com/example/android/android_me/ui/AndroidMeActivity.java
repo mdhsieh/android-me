@@ -28,9 +28,9 @@ import com.example.android.android_me.data.AndroidImageAssets;
 public class AndroidMeActivity extends AppCompatActivity {
 
     // keys to retrieve body part indexes in bundle
-    private static final String HEAD_INDEX = "head-index";
-    private static final String BODY_INDEX = "body-index";
-    private static final String LEG_INDEX = "leg-index";
+    private static final String HEAD_INDEX = "headIndex";
+    private static final String BODY_INDEX = "bodyIndex";
+    private static final String LEG_INDEX = "legIndex";
 
     private int headIndex = 0;
     private int bodyIndex = 0;
